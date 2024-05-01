@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    /* digunakan untuk mengatur jarak dan ukuran elemen. */
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"poppins", sans-serif;
+    /* digunakan untuk mengatur jenis font yang digunakan. */
+}
+body
+/* digunakan sebagai elemen dasar dari dokumen HTML. Elemen  */
+ {
+    background-color: #377dff;
+    /* digunakan untuk mengatur warna latar belakang elemen. */
+}
+.hide {
+ /*akan dihilangkan dari tampilan halaman web  */
+    display: none;
+    /* yang digunakan pada elemen "hide" akan menyembunyikan elemen tersebut dari tampilan halaman web */
+}
+.wrapper{
+/* akan memiliki beberapa properti visual dan posisi. */
+    background-color: #ffffff;
+    /*  Elemen dengan class "wrapper" akan memiliki latar belakang putih. */
+    width: 90;
+    /* akan memiliki lebar yang sama dengan 90 unit. */
+    max-width: 31.25em;
+    /* akan memiliki lebar maksimum yang sama dengan 31,25 em. */
+    padding: 3.12em 5em;
+    /*  akan memiliki jarak antara konten dan garis batas elemen sebesar 3,12 em di atas dan bawah, dan 5 em di kiri dan kanan. */
+    position: absolute;
+    /* akan diposisikan secara absolut. */
+    transform: translateX(-50%);
+    /* akan diterjemahkan sejauh 50% ke kiri. */
+    left: 50%;
+    /* akan diposisikan sejauh 50% ke kanan dari kontainer induk. */
+    top: 1em;
+    /* akan diposisikan sejauh 1 em dari atas kontainer induk. */
+    border-radius: 0.5em;
+    /* Elemen dengan class "wrapper" akan memiliki radius garis pada sudut-sudutnya yang sama dengan 0,5 em. */
+}
+.timer-display {
+    font-size: 2.18em;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.inputs input {
+    width: 2.8em;
+    font-size: 1.3em;
+    border: 1px solid #000000;
+    border-radius: 0.3em;
+    padding: 0.4em 0.2em;
+}
+#set {
+    background-color: #377dff;
+    border: none;
+    padding: 0.9em 1.8em;
+    display: block;
+    margin: 1.5em auto 0 auto;
+    border-radius: 2em;
+    color: #ffffff;
+}
+.alarm {
+    display: grid;
+    grid-template-columns: 8fr 2fr 2fr;
+    gap: 1em;
+    margin-top: 1.5em;
+    align-items: center;
+    border-bottom: 1px solid #898f9b;
+    padding-bottom: 0.6em;
+}
+.alarm input[type="checkbox"] {
+    appearance: none;
+    height: 2em;
+    width: 3.75em;
+    background-color: #e2e2ec;
+    border-radius: 1.25em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+.alarm input[type="checkbox"]::before {
+    position: absolute;
+    content: "";
+    background-color: #757683;
+    height: 1.43em;
+    width: 1.43em;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+}
+.alarm input[type="checkbox"]:checked {
+    background-color: #d2e2ff;
+}
+.alarm input[type="checkbox"]:checked::before {
+    background-color: #377dff;
+    left: 2em;
+}
+.deleteButton {
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #377dff;
+    border: none;
+    cursor: pointer;
+}
